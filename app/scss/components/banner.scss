@@ -3,25 +3,37 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
+  background-color: #f4f4f4;
 
   &__background {
     position: absolute;
+    top: 0;
+    bottom: 0;
     display: flex;
-    z-index: -1;
+    z-index: 0;
+  }
+
+  &__background-image {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   &__content {
+    position: relative;
     justify-self: start;
     max-width: 386px;
-    padding-top: 53px;
-    padding-bottom: 51px;
+    padding-top: 55px;
+    padding-bottom: 49px;
+    z-index: 1;
   }
 
   &__title {
     font-size: 48px;
     font-family: $secondary-font;
     line-height: 52px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   &__content-divider {
@@ -42,6 +54,6 @@
   }
 
   &__text+&__text {
-    margin-top: 7px;
+    margin-top: 6px;
   }
 }

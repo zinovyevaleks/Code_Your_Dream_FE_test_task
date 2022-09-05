@@ -1,13 +1,17 @@
 .about {
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 18px;
   border-bottom: 1px solid #d8d8d8;
+  background-color: #f4f4f4;
+
+  &__inner  {
+    text-align: center;
+  }
 
   &__link {
-    display: flex;
+    display: inline-flex;
     gap: 12px;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     font-size: 14px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
