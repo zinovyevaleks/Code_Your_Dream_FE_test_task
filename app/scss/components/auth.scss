@@ -1,0 +1,45 @@
+.auth {
+  position: relative;
+  display: flex;
+  gap: 22px;
+  background-color: $primary-color;
+  padding: 12px 0 14px 56px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    z-index: 2;
+    background-color: $primary-color;
+    width: 100vw;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -2px;
+      left: 0;
+      height: 1px;
+      background-color: transparent;
+      transition: background-color .15s ease-in-out;
+    }
+
+    &:hover {
+      &:before {
+        background-color: #ffffff;
+      }
+    }
+  }
+}

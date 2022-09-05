@@ -1,0 +1,47 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+
+  &__background {
+    position: absolute;
+    display: flex;
+    z-index: -1;
+  }
+
+  &__content {
+    justify-self: start;
+    max-width: 386px;
+    padding-top: 53px;
+    padding-bottom: 51px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-family: $secondary-font;
+    line-height: 52px;
+    margin-bottom: 30px;
+  }
+
+  &__content-divider {
+    height: 2px;
+    width: 79px;
+    background-color: #ffffff;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__text+&__text {
+    margin-top: 7px;
+  }
+}

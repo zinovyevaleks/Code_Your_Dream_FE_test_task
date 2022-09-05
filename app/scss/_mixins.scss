@@ -1,0 +1,8 @@
+@mixin links-default {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
