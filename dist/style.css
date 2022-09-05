@@ -35,6 +35,29 @@ img {
   margin: 0 auto;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .header__inner {
   display: flex;
   gap: 30px;
@@ -167,4 +190,35 @@ img {
 }
 .banner__text + .banner__text {
   margin-top: 7px;
+}
+
+.about {
+  padding-top: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.about__link {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #e4af1a;
+  font-weight: 700;
+  text-decoration: none;
+}
+.about__link:hover {
+  text-decoration: underline;
+}
+.about__icon {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.about__link:hover .about__icon {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
 }

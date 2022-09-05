@@ -1,0 +1,35 @@
+.about {
+  padding-top: 30px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d8d8d8;
+
+  &__link {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    animation-duration: 1.5s;
+  
+    animation-timing-function: ease-in-out;
+  }
+
+  &__link:hover & {
+    &__icon {
+      animation-name: bounce;
+    }
+  }
+
+}
