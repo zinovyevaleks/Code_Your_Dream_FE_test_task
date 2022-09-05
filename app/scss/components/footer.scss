@@ -1,0 +1,15 @@
+.footer {
+  background-color: #f2f2f2;
+
+  &__inner {
+    padding-top: 39px;
+    padding-bottom: 50px;
+  }
+
+  &__logo {
+    max-width: 93px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+}
