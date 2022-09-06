@@ -1,0 +1,70 @@
+.test {
+  background-color: #f4f4f4;
+  padding-top: 45px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+    gap: 67px;
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  &__counter-text {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    color: $main-text-color;
+  }
+
+  &__progress {
+    display: grid;
+    grid-template-columns: 1fr 1fr 30px;
+    grid-template-rows: auto auto;
+    row-gap: 11px;
+    flex-grow: 1;
+    padding-bottom: 17px;
+  }
+
+  &__progress-label {
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: $main-text-color;
+    text-align: center;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: calc(100% + 2px);
+      right: 0px;
+      z-index: 1;
+      height: 17px;
+      width: 1px;
+      background-color: #c4c4c4;
+    }
+
+    &--first {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+
+
+    }
+
+    &--second {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+    }
+  }
+
+  &__progress-indicator {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+  }
+}

@@ -1,0 +1,11 @@
+.progressbar {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  background-color: #eaeaea;
+
+  &__inner {
+    height: 100%;
+    background-color: $secondary-color;
+  }
+}

@@ -250,7 +250,7 @@ img {
 
 .about {
   padding-top: 35px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #d8d8d8;
   background-color: #f4f4f4;
 }
@@ -426,4 +426,75 @@ img {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.test {
+  background-color: #f4f4f4;
+  padding-top: 45px;
+}
+.test__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 19px;
+  gap: 67px;
+}
+.test__counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.test__counter-text {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 21px;
+  color: #727272;
+}
+.test__progress {
+  display: grid;
+  grid-template-columns: 1fr 1fr 30px;
+  grid-template-rows: auto auto;
+  row-gap: 11px;
+  flex-grow: 1;
+  padding-bottom: 17px;
+}
+.test__progress-label {
+  position: relative;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #727272;
+  text-align: center;
+}
+.test__progress-label:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 2px);
+  right: 0px;
+  z-index: 1;
+  height: 17px;
+  width: 1px;
+  background-color: #c4c4c4;
+}
+.test__progress-label--first {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+.test__progress-label--second {
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+}
+.test__progress-indicator {
+  grid-column: 1/span 3;
+  grid-row: 2/span 1;
+}
+
+.progressbar {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  background-color: #eaeaea;
+}
+.progressbar__inner {
+  height: 100%;
+  background-color: #799ff1;
 }
