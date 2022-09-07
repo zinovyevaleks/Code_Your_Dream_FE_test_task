@@ -535,6 +535,21 @@ img {
   grid-column: 1/span 3;
   grid-row: 2/span 1;
 }
+.test__error {
+  display: none;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.test__error--shown {
+  display: block;
+}
+.test__error-scroll {
+  color: red;
+}
+.test__error-scroll:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .progressbar {
   position: relative;
@@ -553,11 +568,17 @@ img {
   border-collapse: collapse;
   margin-bottom: 35px;
 }
+.questions__row {
+  transition: background-color 0.3s linear;
+}
 .questions__row:not(:last-child) {
   border-bottom: 1px solid #eaeaea;
 }
 .questions__row:nth-child(odd) {
   background-color: #fff;
+}
+.questions__row.isError--animated {
+  background-color: pink;
 }
 .questions__cell {
   font-size: 15px;

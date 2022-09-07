@@ -5,12 +5,18 @@
   margin-bottom: 35px;
 
   &__row {
+    transition: background-color .3s linear;
+
     &:not(:last-child) {
       border-bottom: 1px solid #eaeaea;
     }
 
     &:nth-child(odd) {
       background-color: #fff;
+    }
+
+    &.isError--animated {
+      background-color: pink;
     }
   }
 

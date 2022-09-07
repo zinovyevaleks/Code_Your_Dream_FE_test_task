@@ -40,7 +40,7 @@
     color: $main-text-color;
     text-align: center;
 
-    
+
     &:after {
       content: '';
       position: absolute;
@@ -66,5 +66,24 @@
   &__progress-indicator {
     grid-column: 1 / span 3;
     grid-row: 2 / span 1;
+  }
+
+  &__error {
+    display: none;
+    margin-bottom: 15px;
+    text-align: center;
+
+    &--shown {
+      display: block;
+    }
+  }
+
+  &__error-scroll {
+    color: red;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 }
