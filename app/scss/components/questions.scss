@@ -57,4 +57,12 @@
       }
     }
   }
+
+  .isError & {
+    &__cell {
+      &:first-child {
+        color: red;
+      }
+    }
+  }
 }

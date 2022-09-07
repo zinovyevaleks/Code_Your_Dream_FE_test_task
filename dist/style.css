@@ -594,3 +594,6 @@ img {
 .questions__head .questions__cell:first-child {
   text-align: left;
 }
+.isError .questions__cell:first-child {
+  color: red;
+}
