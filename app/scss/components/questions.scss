@@ -1,0 +1,60 @@
+.questions {
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-collapse: collapse;
+  margin-bottom: 35px;
+
+  &__row {
+    &:not(:last-child) {
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+  }
+
+  &__cell {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+    color: $main-text-color;
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    &:not(:first-child) {
+      justify-content: center;
+      width: 90px;
+    }
+
+    &:first-child {
+      padding-left: 32px;
+      padding-right: 36px;
+    }
+
+    &:last-child {
+      padding-right: 10px;
+    }
+  }
+
+  &__head & {
+    &__row {
+      background-color: $secondary-color;
+    }
+
+    &__cell {
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      padding-top: 37px;
+      padding-bottom: 32px;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+}

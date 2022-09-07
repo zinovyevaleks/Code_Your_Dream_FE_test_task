@@ -101,6 +101,44 @@ img {
   color: #ffffff;
   background-color: #b68c15;
 }
+.test__table .form__button {
+  margin: 0 auto;
+}
+.form__checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.form__checkbox-input {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+.form__checkbox-label {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  border: 1px solid #dadada;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+.form__checkbox-label:hover {
+  background-color: #f2f2f2;
+}
+.form__checkbox-label:after {
+  content: url("data:image/svg+xml,%3Csvg version='1.2' xmlns='http://www.w3.org/2000/svg' width='23' height='20'%3E%3Cpath d='M23 1.4C16.6 7.3 11.3 15.7 9.7 20L0 10.1l2.5-2 5.6 4.4C10.3 9.8 15.4 4.3 22.4 0z' style='fill:%23799ff1'/%3E%3C/svg%3E");
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+.form__checkbox-input:checked + .form__checkbox-label:after {
+  opacity: 1;
+}
 
 .header__inner {
   display: flex;
@@ -429,13 +467,14 @@ img {
 }
 
 .test {
-  background-color: #f4f4f4;
   padding-top: 45px;
+  padding-bottom: 47px;
+  background-color: #f4f4f4;
 }
 .test__header {
   display: flex;
   align-items: center;
-  margin-bottom: 19px;
+  margin-bottom: 9px;
   gap: 67px;
 }
 .test__counter {
@@ -497,4 +536,52 @@ img {
 .progressbar__inner {
   height: 100%;
   background-color: #799ff1;
+}
+
+.questions {
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  border-collapse: collapse;
+  margin-bottom: 35px;
+}
+.questions__row:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+}
+.questions__row:nth-child(odd) {
+  background-color: #fff;
+}
+.questions__cell {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.6px;
+  color: #727272;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+.questions__cell:not(:first-child) {
+  justify-content: center;
+  width: 90px;
+}
+.questions__cell:first-child {
+  padding-left: 32px;
+  padding-right: 36px;
+}
+.questions__cell:last-child {
+  padding-right: 10px;
+}
+.questions__head .questions__row {
+  background-color: #799ff1;
+}
+.questions__head .questions__cell {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  padding-top: 37px;
+  padding-bottom: 32px;
+}
+.questions__head .questions__cell:first-child {
+  text-align: left;
 }

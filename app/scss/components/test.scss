@@ -1,11 +1,12 @@
 .test {
-  background-color: #f4f4f4;
   padding-top: 45px;
+  padding-bottom: 47px;
+  background-color: #f4f4f4;
 
   &__header {
     display: flex;
     align-items: center;
-    margin-bottom: 19px;
+    margin-bottom: 9px;
     gap: 67px;
   }
 
@@ -53,8 +54,6 @@
     &--first {
       grid-column: 1 / span 1;
       grid-row: 1 / span 1;
-
-
     }
 
     &--second {
